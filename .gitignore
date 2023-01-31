@@ -1,0 +1,9 @@
+dist
+myplanet-client
+myplanet-tasks
+node_modules
+archive
+root_data
+earth-engine-ch-keys.json
+package-lock.json
+pure.html

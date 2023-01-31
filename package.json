@@ -1,0 +1,38 @@
+{
+  "name": "earth_engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "00_earth_engine_server.js",
+  "type": "module",
+  "scripts": {
+    "wp": "webpack",
+    "build": "npx tsc && node importTasks.js && node importClient.js",
+    "start": "node dist/00_earth_engine_server.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/run_dev.js\"",
+    "t": "nodemon -q dist/run_dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/earthengine": "^0.1.326",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.8.0",
+    "@types/vhost": "^3.0.4",
+    "babel-plugin-solid-styled": "^0.6.3",
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.4.0",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4",
+    "vhost": "^3.0.2",
+    "vite": "^4.0.4",
+    "vite-plugin-solid": "^2.5.0",
+    "myplanet-client": "^4.0.0",
+    "myplanet-tasks": "^2.0.0"
+  }
+}
